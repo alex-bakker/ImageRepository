@@ -13,3 +13,61 @@
  *= require_tree .
  *= require_self
  */
+
+/* Default background across all pages */
+ html {
+    background-image: linear-gradient(to right,#91EAE4, #86A8E7, #7F7FD5);
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Wrapper to be used on divs around any devise form */
+.devise_form_wrapper {
+    float: none;
+    text-align : center;
+    background-color: white;
+    border-radius: 5%;
+    vertical-align: auto;
+    margin: 0;
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 40px black;
+    padding: 10px 0px 20px 0px;
+}
+
+.devise_form_wrapper input {
+    margin-bottom: 30px;
+    margin: 2px 10px;
+    width: 70%;
+    display: inline-block;
+    height: 30px;
+    font-size: 14pt;
+    border: 1px solid gray;
+  }
+
+.devise_form_wrapper input[type=submit] {
+    background-image: linear-gradient(to right,#91EAE4, #86A8E7, #7F7FD5);
+    color: white;
+    font-size: 18pt;
+    width: 40%;
+    height: 50%;
+  }
+
+.devise_form_wrapper input[type=checkbox] {
+    width: auto;
+  }
+  
+.devise_form_wrapper label {
+    font-size: 14pt;
+    vertical-align: 30%;
+  }
