@@ -1,4 +1,4 @@
-class PictureController < ApplicationController
+class PicturesController < ApplicationController
   
   def index
     @pictures = Picture.where(:user_id => current_user.id)
@@ -29,11 +29,17 @@ class PictureController < ApplicationController
   def update
     @picture = Picture.find(params[:id])
 
-    if @picture.update(article_params)
+    if @picture.update(picture_params)
       redirect_to @picture
     else
       render :edit
     end
+  end
+
+  def destroy
+    @picture = Picture.find(params[:id])
+    @picture.destroy
+    redirect_to root_path
   end
 
   private

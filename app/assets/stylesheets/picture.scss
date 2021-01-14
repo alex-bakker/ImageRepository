@@ -1,3 +1,122 @@
 // Place all the styles related to the picture controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.title {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.gallery {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+}
+
+a.menu-button {
+    position: absolute;
+    top: 50px;
+    width:7%;
+    font-size: 16pt;
+    height:auto;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-align: center;
+    text-decoration: none;
+    color: initial;
+}
+
+a.sign-out {
+    right:30px;
+}
+
+.image-card {
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5%;
+}
+
+.image-card img {
+    width:100%;
+    height:auto;
+}
+
+.image-card:hover {
+    box-shadow: 1px 1px 5px black;
+}
+
+.single_image_card {
+    width: 30%;
+    float: none;
+    text-align : center;
+    background-color: white;
+    vertical-align: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    padding-bottom:10px;
+}
+
+.single_image_card img {
+    width: 100%;
+}
+
+.link-as-button {
+    font-size: 18pt;
+    height:auto;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-align: center;
+    text-decoration: none;
+    color: initial;
+    width: 100px;
+    height: 30px;
+}
+
+.picture-form-wrapper {
+    float: none;
+    text-align : center;
+    background-color: white;
+    border-radius: 5%;
+    vertical-align: auto;
+    margin: 0;
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 40px black;
+    padding: 10px 0px 20px 0px;
+}
+
+.picture-form-wrapper input {
+    margin-bottom: 40px;
+    margin: 2px 20px;
+    width: 70%;
+    display: inline-block;
+    height: 30px;
+    font-size: 14pt;
+    border: 1px solid gray;
+}
+
+.picture-form-wrapper label {
+    font-size: 14pt;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.picture-form-wrapper .field {
+    margin-bottom: 20px;
+}

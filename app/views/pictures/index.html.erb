@@ -1,0 +1,20 @@
+<h1 class="title">Gallery</h1>
+
+<a style="left:30px" class="menu-button" href = "/pictures/new"> New Photo </a>
+<%= link_to "Sign out", destroy_user_session_path, :class => "menu-button sign-out", :method => :delete %>
+
+<br>
+
+<div class = "gallery">
+  <% @pictures.each do |pic| %>
+  <div class = "image-card">
+  <a href="/pictures/ <%= pic.id %>">
+    <%= image_tag pic.image %>
+  </a>
+    <div>
+      <h3 style="text-align:center"><%= pic.title %></a></h3>
+      <p style="text-align:center"><%= truncate(pic.description) %></p>
+    </div>
+  </div>
+  <% end %>
+</div>

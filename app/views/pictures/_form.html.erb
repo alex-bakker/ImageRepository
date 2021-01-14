@@ -1,0 +1,26 @@
+<div class="picture-form-wrapper">
+
+    <h2><%= title %></h2>
+
+    <%= form_with model: picture do |f| %>
+    <div class="field">
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+    </div>
+
+    <div class="field">
+        <%= f.label :description %>
+        <%= f.text_field :description %>
+    </div>
+
+    <div class="field">
+        <%= f.label :image %>
+        <%= f.file_field :image %>
+    </div>
+
+    <div class="field">
+        <%= f.submit %>
+    </div>
+    </div>
+    <% end %>
+</div>

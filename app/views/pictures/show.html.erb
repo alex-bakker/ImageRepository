@@ -1,0 +1,13 @@
+<div class = "single_image_card">
+    <%= image_tag @picture.image %>
+    <h2> <%= @picture.title %></h2>
+    <p> <%= @picture.description %></p>
+
+    <a class="link-as-button" href = "/">Back</a>
+    <%= link_to "Edit", edit_picture_path(@picture), :class => "link-as-button" %>
+    <%= link_to "Delete", picture_path(@picture),
+                  method: :delete,
+                  :class => "link-as-button",
+                  data: { confirm: "Are you sure?" } %>
+
+</div>
