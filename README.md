@@ -1,29 +1,22 @@
-<<<<<<< HEAD
 # ImageRepository
+
 Image Repository made with Ruby on Rails for the Shopify Summer 2021 Backend Challenge
-=======
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Main Features
 
-Things you may want to cover:
+* User registration & mandatory authentication before use
 
-* Ruby version
+* Full CRUD capability for images
 
-* System dependencies
+* Ability to search image based on title
 
-* Configuration
+## Requirements
 
-* Database creation
+* Ruby Version: 2.7.2
+* The "bundle" gem (`gem install bundle`)
 
-* Database initialization
+## Deployment
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
->>>>>>> master
+1. Clone and `cd` into the repo
+2. Run `bundle install`
+3 Run `rails server` to start the program at localhost:3000
