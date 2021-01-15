@@ -19,4 +19,4 @@ Image Repository made with Ruby on Rails for the Shopify Summer 2021 Backend Cha
 
 1. Clone and `cd` into the repo
 2. Run `bundle install`
-3 Run `rails server` to start the program at localhost:3000
+3. Run `rails server` to start the program at localhost:3000
