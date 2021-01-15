@@ -5,16 +5,18 @@
 
 <br>
 
-<div class = "gallery">
-  <% @pictures.each do |pic| %>
-  <div class = "image-card">
-  <a href="/pictures/ <%= pic.id %>">
-    <%= image_tag pic.image %>
-  </a>
-    <div>
-      <h3 style="text-align:center"><%= pic.title %></a></h3>
-      <p style="text-align:center"><%= truncate(pic.description) %></p>
+<div class="gallery-wrapper">
+  <div class = "gallery">
+    <% @pictures.each do |pic| %>
+    <div class = "image-card">
+    <a href="/pictures/ <%= pic.id %>">
+      <%= image_tag pic.image %>
+    </a>
+      <div>
+        <h3 style="text-align:center"><%= pic.title %></a></h3>
+        <p style="text-align:center"><%= truncate(pic.description) %></p>
+      </div>
     </div>
+    <% end %>
   </div>
-  <% end %>
 </div>
