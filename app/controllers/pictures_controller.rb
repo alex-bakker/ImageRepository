@@ -1,7 +1,16 @@
 class PicturesController < ApplicationController
   
   def index
-    @pictures = Picture.where(:user_id => current_user.id)
+
+    title_search = params[:search]
+
+    if(! title_search.nil? && !title_search.to_s.strip.empty?)
+      @search = title_search
+      @pictures = Picture.where(["user_id = ? AND title LIKE (?)", current_user.id, "%#{title_search}%"])
+    else
+      @pictures = Picture.where(:user_id => current_user.id)
+      @search= nil
+    end
   end
 
   def show
@@ -46,6 +55,5 @@ class PicturesController < ApplicationController
     def picture_params
       params.require(:picture).permit(:title, :description, :image)
     end
-
 
 end

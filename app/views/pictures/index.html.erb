@@ -5,6 +5,12 @@
 
 <br>
 
+<div class = "search-box">
+  <form action = "/">
+    <input type="text" value = "<%=@search%>" name="search" placeholder="Search by title...">
+  </form>
+</div>
+
 <div class="gallery-wrapper">
   <div class = "gallery">
     <% @pictures.each do |pic| %>

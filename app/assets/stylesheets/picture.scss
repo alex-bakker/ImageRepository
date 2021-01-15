@@ -5,6 +5,7 @@
 .title {
     text-align: center;
     margin-top: 3%;
+    font-size: 40px;
 }
 
 .gallery-wrapper {
@@ -22,10 +23,10 @@
 
 a.menu-button {
     position: absolute;;
-    top: 50px;
+    top: 40px;
     background-color: rgb(42, 137, 88);
     color: white;
-    padding: 1em 1.5em;
+    padding: 1em 1em;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 2%;
@@ -128,4 +129,14 @@ a.sign-out {
 
 .picture-form-wrapper .field {
     margin-bottom: 20px;
+}
+
+.search-box {
+    width: 30%;
+    margin: 0 auto 20px auto;
+}
+  
+.search-box input {
+    width:100%;
+    font-size: 18px;
 }
