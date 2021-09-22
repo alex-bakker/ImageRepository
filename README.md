@@ -1,6 +1,6 @@
 # ImageRepository
 
-Image Repository made with Ruby on Rails for the Shopify Backend Challenge
+Image Repository made with Ruby on Rails for the Winter 2022 Shopify Backend Challenge
 
 ## Main Features
 
